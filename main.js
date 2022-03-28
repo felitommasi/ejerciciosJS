@@ -4,7 +4,7 @@ const seccionDos = 70;
 const seccionTres = 90; 
 
 //definir destino
-let destino = prompt('Ingrese su destino para comprar pasaje:' + '\n' + '* Su saldo actual es de $80');
+let destino = prompt(`* Su saldo actual es: $80 \n\n Ingrese su destino para comprar pasaje:`);
 let precioPasaje = destino;
 
 if ((destino == 'yrigoyen') || (destino == 'avellaneda') || (destino == 'gerli') || (destino == 'lanus') || (destino == 'escalada')){
@@ -27,5 +27,5 @@ const saldoRestante = compraPasaje(saldoActual,precioPasaje);
 if (saldoRestante < 0){
     alert('Su saldo es insuficiente')
 }else if (saldoRestante >= 0){
-    alert('Buen viaje' + '\n' + `* Su saldo restante es: $${saldoRestante}`);
+    alert(`Buen viaje \n\n * Su saldo restante es: $${saldoRestante}`);
 }
